@@ -1,0 +1,19 @@
+$text: #454851;
+$black: #171d1c;
+
+@mixin f300 {
+  font-family: 'ProximaNova-Light';
+  font-weight: 300;
+}
+@mixin f400 {
+  font-family: 'ProximaNova-Regular', sans-serif;
+  font-weight: 400;
+}
+@mixin f600 {
+  font-family: 'ProximaNova-Semibold', sans-serif;
+  font-weight: 600;
+}
+@mixin f800 {
+  font-family: 'ProximaNova-Extrabld', sans-serif;
+  font-weight: 800;
+}
