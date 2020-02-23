@@ -292,8 +292,8 @@ a.header__logo:hover::after{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  display: flex;
-  flex-wrap: wrap;
+  display: inline-block;
+  font-size: 0;
   img{
     cursor: pointer;
     & + img{
@@ -303,7 +303,8 @@ a.header__logo:hover::after{
   a{
     font-size: 0;
     & + a{
-      margin-top: -1px;
+      font-size: 0px;
+
     }
   }
 }
@@ -312,6 +313,7 @@ a.header__logo:hover::after{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
 }
 .item-content__title{
   color: $black;
@@ -322,8 +324,9 @@ a.header__logo:hover::after{
 .item-content__text{
   color: $text;
   @include f300;
-  line-height: 22px;
+  line-height: 18px;
   font-size: 16px;
+  width: 230px;
 }
 .item-content__info{
   display: flex;
@@ -378,7 +381,6 @@ a.header__logo:hover::after{
   font-size: 14px;
   @include f300;
   position: relative;
-  
   text-align: center;
   &::before{
     content: '';
